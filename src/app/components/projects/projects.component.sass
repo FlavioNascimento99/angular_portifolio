@@ -11,27 +11,31 @@
   font-weight: bold
   font-size: 30px
 .container
-  border: 2px solid black
+  border: 3px solid black
   margin: 2em
   width: 22.5vw
   height: 15vh
   text-align: center
-  background-color: black
-.container:hover
   background-color: white
+.container:hover
+  background-color: black
   box-shadow: black 5px 5px
   transition: box-shadow 0.3s, transform 0.3s ease
   transform: translate(-5px, -5px)
 a
-  color: white
-  font-size: 90px
+  color: black
+  font-size: 70px
   text-decoration: none
 a:hover
-  color: black
+  color: white
 
 @media screen and (max-width: 600px)
   .container
-    height: 3.5vh
+    height: 5vh
+    width: 30vw
+    display: flex
+    align-items: center
+    justify-content: center
   a
     font-size: 25px
 
