@@ -26,22 +26,59 @@ img
   height: 100%
 .text p
   width: 80%
-@media screen and (max-width: 600px)
+
+// Para smartphones
+@media screen and (max-width: 768px)
   .main
     width: 100%
-    height: 70vh
     display: flex
     flex-direction: column
     align-items: center
+    height: 100%
+    margin-bottom: 2em
+    box-sizing: border-box
   .photo
     width: 100%
     padding-top: 3em
   .img
-    width: 40vw
-    height: 20vh
+    width: 70%
+    height: 100%
   .text
-    padding-top: 2em
-    width: 85%
-    font-size: 12px
+    box-sizing: border-box
+    margin-bottom: 2em
+    width: 100%
+    font-size: 18px
     text-align: justify
 
+// Para telas de tablets e iPads
+@media screen and (min-width: 769px) and (max-width: 1440px)
+  .main
+    display: flex
+    flex-direction: column
+    height: 80vh
+  .photo
+    display: flex
+    justify-content: center
+  .img
+    width: 25em
+    height: 23em
+  .text
+    width: 100%
+    font-size: 18px
+    display: flex
+    align-items: center
+    justify-content: center
+
+// Para telas 2-4k+
+@media screen and (min-width: 1441px)
+  .photo
+    display: flex
+    justify-content: center
+  .img
+    width: 35em
+    height: 30em
+  .text
+    font-size: 24px
+    display: flex
+    align-items: center
+    justify-content: center
