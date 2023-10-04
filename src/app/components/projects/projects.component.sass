@@ -6,11 +6,9 @@
   width: 100%
   height: fit-content
   border-bottom: 1px solid black
-
 .title
   font-weight: bold
   font-size: 30px
-
 .container
   border: 2px solid black
   margin: 2em
@@ -18,17 +16,21 @@
   height: 15vh
   text-align: center
   background-color: black
-
-a
-  color: white
-  font-size: 90px
-  text-decoration: none
-
 .container:hover
   background-color: white
   box-shadow: black 5px 5px
   transition: box-shadow 0.3s, transform 0.3s ease
   transform: translate(-5px, -5px)
-
+a
+  color: white
+  font-size: 90px
+  text-decoration: none
 a:hover
   color: black
+
+@media screen and (max-width: 600px)
+  .container
+    height: 3.5vh
+  a
+    font-size: 25px
+
